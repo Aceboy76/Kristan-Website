@@ -1,10 +1,29 @@
-.navbar, .carousel{
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+h1{
+  font-family: serif;
+}
+h3, h5{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar,
+.carousel {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
 }
 
-
+.carousel,
 .carousel .carousel-item {
-  height: 600px;
+  height: 700px;
 }
 
 .carousel-item img {
@@ -17,6 +36,7 @@
 
 .carousel-caption {
   z-index: 2;
+  bottom: 250px;
 }
 
 .carousel-inner::before {
@@ -29,126 +49,180 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.w-100{
-    height: 100vh;
+.w-100 {
+  height: 100vh;
 }
-.pa-100{
+.pa-100 {
   padding: 100px 100px;
 }
 
-.pnb-100{
+.pnb-100 {
   padding: 100px 100px 0 100px;
 }
 
-.pnt-100{
+.pnt-100 {
   padding: 0 100px 100px 100px;
 }
 
-
-.about img{
+.about img {
   width: 500px;
   height: 500px;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+  --animate-delay: 10s;
 }
 
-.card{
+.card {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+  margin-bottom: 50px;
+  background-color: beige;
 }
 
-.img-area img{
-  width: 350px;
-  height: 300px;
+.img-area img {
+  width: 160px;
+  height: 160px;
+  margin-left: 10px;
 }
+
+footer p {
+  margin: 0;
+}
+
 @media only screen and (max-width: 768px) and (max-width: 991px) {
-    .carousel-caption{
-        bottom: 370px;
-    }
-
-    .carousel-caption p{
-        width: 100%;
-    }
-
-   .about{
-    width: 100%;
-    padding: 100px 10px;
-   }
-   .about-text p{
-    font-size: 20px;
-    text-align: justify;
-   }
-
-   .about-text, .section-header h2{
-    font-size: 30px;
-    text-align: center;
-    
-   }
-
-   .section-header{
-    padding-bottom: 0px !important;
-   }
-
-   .section-header p{
-    font-size: 20px;
-    text-align: center;
-   }
-   .card{
-    margin-bottom: 30px;
-    
-   }
-   
-}
-
-@media only screen and (max-width: 767px) {
-    
-
-  .navbar {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
   
-  }
-  .carousel{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    
+ .navbar-brand{
+  margin: 0;
+ }
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
   }
 
   .carousel-caption {
-    bottom: 125px;
-
-  }
-
-  .carousel-caption h5{
-    font-size: 20px;
+    bottom: 370px;
   }
 
   .carousel-caption p {
-    padding: 10px 15px;
     width: 100%;
-    line-height: 1.6;
-    font-size: 12px;
   }
 
-  .about{
+  .about {
     width: 100%;
-    padding: 50px 0 50px 0;
-   }
+    padding: 100px 10px;
+  }
 
-   .about-img img{
+  .about-text p {
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .about-text,
+  .section-header h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .person-background {
     width: 100%;
-    height: 300px;
-   }
-   .about-text{
-    padding: 20px 0 0 0;
-   }
+    padding: 10px;
+  }
+  .card-body {
+    padding: 10px;
+    text-align: center;
+  }
 
-   .about-text p{
-    font-size: 15px;
-   }
-   .services, .porfolio{
-    padding: 0 0 50px 0;
-   }
+  .section-header {
+    padding-bottom: 0px;
+  }
 
-   .section-header p{
+  .section-header p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+
+  
+  .footer-title p {
+    font-size: 25px;
+  }
+  .footer-body p {
     font-size: 15px;
-   }
+  }
+
+  .education .card .row .col-5,
+  .education .card .row .col-7,
+  .education .card .row .col-3,
+  .education .card .row .col-9 {
+    width: 100%;
+  }
+
+  
+  .data-text h1,
+  .achievement-text {
+    font-size: 25px;
+  }
+  .achievement,
+  .personaldata {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .achievement-img,
+  .data-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
+
+  @media only screen and (max-width: 767px) {
+    .navbar,
+    .carousel {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .carousel-caption {
+      bottom: 125px;
+    }
+
+    .carousel-caption h5 {
+      font-size: 20px;
+    }
+
+    .carousel-caption p {
+      padding: 10px 15px;
+      width: 100%;
+      line-height: 1.6;
+      font-size: 12px;
+    }
+
+    .about {
+      width: 100%;
+      padding: 50px 0 50px 0;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 300px;
+    }
+    .about-text {
+      padding: 20px 0 0 0;
+    }
+
+    .about-text p {
+      font-size: 15px;
+    }
+
+    .education,
+    .porfolio {
+      padding: 0 0 0 0;
+    }
+
+    .section-header p {
+      font-size: 15px;
+    }
+  }
 }
