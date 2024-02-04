@@ -1,19 +1,43 @@
+body {
+  background-image: url("./images/KG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-color: rgb(255, 255, 255, 0.5);
+  background-size: 700px 700px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
 
-h1{
+h1 {
   font-family: serif;
 }
-h3, h5{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+h3,
+h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Tahoma, Geneva,
+    Verdana, sans-serif;
 }
-p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-h4{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand,
+footer .brand-name {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(237, 198, 93);
 }
 
 .navbar,
@@ -88,15 +112,27 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) and (max-width: 991px) {
-  
- .navbar-brand{
-  margin: 0;
- }
+  body {
+    background-image: url("./images/KG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255, 0.5);
+    background-size: 300px 300px;
+  }
+
+  .navbar-brand {
+    margin: 0;
+  }
   .navbar-brand img {
     width: 50px;
     height: 50px;
   }
 
+  .carousel-item img {
+    height: 100%;
+  }
   .carousel-caption {
     bottom: 370px;
   }
@@ -142,7 +178,6 @@ footer p {
     margin-bottom: 30px;
   }
 
-  
   .footer-title p {
     font-size: 25px;
   }
@@ -157,7 +192,6 @@ footer p {
     width: 100%;
   }
 
-  
   .data-text h1,
   .achievement-text {
     font-size: 25px;
@@ -173,9 +207,6 @@ footer p {
     display: flex;
     justify-content: center;
   }
-
-  
-  
 
   @media only screen and (max-width: 767px) {
     .navbar,
